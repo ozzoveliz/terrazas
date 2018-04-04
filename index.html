@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css"/>
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css"/>
     <link rel="stylesheet" href="styles/app.css"/>
+    <link rel="stylesheet" href="styles/custom.css"/>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="jquery1.7.1.min.js"></script>
@@ -67,7 +68,7 @@
 
             <div class="center" style="height:auto;position:relative;">
                 <div class="header-logo-container">
-                    <img class="img-logo" src="img/app.png" />
+                    <img class="img-logo" src="img/logo-dark.png" />
                 </div>
                 <div style="position:relative;">
                     <ons-carousel class="carousel-detail" id="home_images" var="homeSlider"
@@ -124,13 +125,16 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('menudiario.html');"></div>
+                <div class="title">
+                    Menú Diario
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
 
         <div id="menudiario_scroll" class="scrollable">
             <div class="scroll-content">
-                <div class="horizontal">
+                <div class="horizontal title-border">
                     <div class="title">
                         {{title}}
                     </div>
@@ -196,6 +200,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('carta.html');"></div>
+                <div class="title">
+                    {{labels.a_la_carta}}
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -203,11 +210,11 @@
         <div id="carta_scroll" class="scrollable">
             <div class="scroll-content">
                 <div>
-                    <div class="horizontal">
+                    <!--<div class="horizontal">
                         <div class="title">
                             {{labels.a_la_carta}}
                         </div>
-                    </div>
+                    </div>-->
 
                     <div>
                         <div class="horizontal">
@@ -237,16 +244,20 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('grupo.html');"></div>
+                <div class="title">
+                    Grupos
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
 
         <div id="grupo_scroll" class="scrollable">
-            <div class="horizontal">
+            <div class="horizontal title-border">
                 <div class="title">
                     {{labels.menu_para_grupos}}
                 </div>
-
+            </div>
+            <div class="horizontal">
                 <div id="grupos_descripcion" class="description">
                 </div>
 
@@ -289,6 +300,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('grupo.html');"></div>
+                <div class="title">
+                    Las Terrazas
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -307,6 +321,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('grupo.html');"></div>
+                <div class="title">
+                    Espacios
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -343,6 +360,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('novedades.html');"></div>
+                <div class="title">
+                    Espacios
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -361,6 +381,7 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('localizacion.html');"></div>
+                <div class="title">Localización</div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -405,6 +426,7 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('redes.html');"></div>
+                <div class="title">Info</div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -443,6 +465,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('galerias.html');"></div>
+                <div class="title">
+                    Galeria
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
@@ -451,9 +476,9 @@
 
             <div class="scroll-content scrollfix">
 
-                <div class="title" align="center">
+                <!--<div class="title" align="center">
                     Galeria
-                </div>
+                </div>-->
 
                 <div id="galerias_content">
 
@@ -483,6 +508,9 @@
         <ons-toolbar class="toolbar">
             <div class="center header-title">
                 <div class="backButton" onclick="splash.popPage('galeria.html');"></div>
+                <div class="title">
+                    Galeria
+                </div>
                 <div class="rightButton buttonInfo" onclick="infoAction()"></div>
             </div>
         </ons-toolbar>
