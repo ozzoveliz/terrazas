@@ -205,6 +205,10 @@
     color: #000000;
     font-family: 'Philosopher_bold';
 }
+.horizontal {
+    color: #6f6e6e;
+    font-family: 'Roboto';
+}
 .horizontal .title {
     color: #000000;
     font-family: 'Philosopher_bold';
