@@ -114,7 +114,6 @@
     <!--<plugins>
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>-->
-    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
 
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.InAppBrowser" />
