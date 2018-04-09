@@ -295,3 +295,13 @@
 .contact-row {
     border-bottom: 1px dotted #ea963b;
 }
+@media screen and (min-width: 375px) {
+    .llamanos, .localizacion {
+        width: 140px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .llamanos, .localizacion {
+        width: 142px;
+    }
+}
